@@ -12,7 +12,7 @@ class Help
       puts "1) How many player can be? "
       puts "2) How can I do make points? "
       puts "3) Example of making points. "
-      puts "5) How many points do I need to win? "
+      puts "4) How many points do I need to win? "
       puts "5) Exit or just enter to START the game.  ".colorize(:red)
       puts @@line.colorize(:light_blue)
       print "Option: "
@@ -31,7 +31,7 @@ class Help
         help_ExamplePoints
       when 4
         space
-        hel_HowManyPoints
+        help_HowManyPoints
       when 5
         check = true
       else
@@ -89,7 +89,9 @@ class Help
     pressToContinue
   end
 
-  def hel_HowManyPoints
+  #To display how many points do you need for win
+  def help_HowManyPoints
     puts " You need to have 1500 or more points to win the game."
+    pressToContinue
   end
 end
