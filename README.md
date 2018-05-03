@@ -23,7 +23,9 @@ Or install it yourself as:
 ## Usage
 
 Go to irb
+
  $ require 'greed_chido'
+
  $ game = GreedChido::Greed.new
 
  And the game will start
